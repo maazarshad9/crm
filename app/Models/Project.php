@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Lead;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
+use App\Project_User;
 
 class Project extends Model
 {
@@ -15,10 +16,7 @@ class Project extends Model
     	return $this->belongsTo(Lead::class, 'customer_id');
     }
 
-    public function owner()
-    {
-        return $this->belongsTo(User::class, 'owner_id');
-    }
+  
 
     public function members()
     {
@@ -28,7 +26,14 @@ class Project extends Model
 	    		'allocation_commission', 
                 'confirmation_commission',
                 'size',
-                'category'
+                'category',
+                'created_at'
 	    	]);
     }
+    public function gettotal($id)
+    {
+        $total = Project_User::where('project_id',$id)->sum('booking_commission') + Project_User::where('project_id',$id)->sum('allocation_commission') + Project_User::where('project_id',$id)->sum('confirmation_commission');
+        return $total;
+    }
+    
 }

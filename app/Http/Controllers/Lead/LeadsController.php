@@ -30,9 +30,9 @@ class LeadsController extends Controller
         // check if the role is agent
         // if agent then list his own leads
         // if super admin then continue
-
+        
         return view('leads.index', [
-            'leads' => $model->latest()->paginate(15),
+            'leads' => $model->where('last_date','>', Carbon::now())->paginate(15),
             'count' => $model->count()
         ]);
     }

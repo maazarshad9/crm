@@ -47,6 +47,7 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:super-admin', 'aut
 	Route::get('dashboard/lead/addmeeting/{lead}', ['as' => 'lead.addmeeting', 'uses' => 'Lead\\LeadsController@addmeeting']);
 	Route::put('dashboard/lead/storemeeting/{lead}', ['as' => 'lead.storemeeting', 'uses' => 'Lead\\LeadsController@storemeeting']);
 	
+	Route::get('dashboard/expire','Lead\\LeadsController@expire')->name('leads.expire');
 	// Set Call
 	Route::get('dashboard/lead/setcall/{lead}', ['as' => 'lead.setcall', 'uses' => 'Lead\\LeadsController@setcall']);
 	Route::put('dashboard/lead/storecalling/{lead}', ['as' => 'lead.storecalling', 'uses' => 'Lead\\LeadsController@storecalling']);
@@ -60,6 +61,7 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:super-admin|agent'
 	Route::resource('callings', 'Calling\\CallingsController');
 
 });
+<<<<<<< HEAD
 
 Route::get('/import', 'ImportController@getImport')->name('import');
 Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
@@ -70,3 +72,8 @@ Route::post('/import_process', 'ImportController@processImport')->name('import_p
 
 Route::get('agent/detail/{id}','Agent\\AgentsController@detail')->name('view_details');
 
+=======
+Route::post('leads/search', 'Lead\\LeadsController@search')->name('leads.search');
+
+Route::get('agents/{id}', 'Agent\\AgentsController@show')->name('details');
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855

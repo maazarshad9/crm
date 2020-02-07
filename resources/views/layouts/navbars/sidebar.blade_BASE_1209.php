@@ -75,8 +75,8 @@
             @hasanyrole('super-admin')
             <li class="nav-item">
                 <a class="nav-link active" href="#admins" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="admins">
-                    <i class="fas fa-users" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Admins') }}</span>
+                    <i class="fas fa-users" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Admins') }}</span>
                 </a>
 
                 <div class="collapse" id="admins">
@@ -92,8 +92,8 @@
 
             <li class="nav-item">
                 <a class="nav-link active" href="#agents" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="agents">
-                    <i class="fas fa-user-check" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Agents') }}</span>
+                    <i class="fas fa-user-check" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Agents') }}</span>
                 </a>
 
                 <div class="collapse" id="agents">
@@ -111,8 +111,8 @@
             @hasanyrole('super-admin|agent')
             <li class="nav-item">
                 <a class="nav-link active" href="#leads" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="leads">
-                    <i class="fas fa-headset" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Leads') }}</span>
+                    <i class="fas fa-headset" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Leads') }}</span>
                 </a>
 
                 <div class="collapse" id="leads">
@@ -135,20 +135,14 @@
             @hasanyrole('agent')
             <li class="nav-item">
                 <a class="nav-link active" href="#commission" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="commission">
-                    <i class="fas fa-headset" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Project & Commission') }}</span>
+                    <i class="fas fa-headset" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Project & Commission') }}</span>
                 </a>
 
                 <div class="collapse" id="commission">
                     <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
-
-                            <a class="nav-link" href="{{ route('agents.show', auth()->user()) }}">
-
                             <a class="nav-link" href="{{ route('view_details', auth()->user()) }}">
-
-                            <a class="nav-link" href="{{ route('details', auth()->user()) }}">
-
                                 {{ __('View  Details') }}
                             </a>
                         </li>
@@ -159,8 +153,8 @@
             @hasanyrole('super-admin')
             <li class="nav-item">
                 <a class="nav-link active" href="#customers" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="customers">
-                    <i class="fas fa-headset" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Customers') }}</span>
+                    <i class="fas fa-headset" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Customers') }}</span>
                 </a>
 
                 <div class="collapse" id="customers">
@@ -175,8 +169,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="#projects" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="customers">
-                    <i class="fas fa-headset" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Projects') }}</span>
+                    <i class="fas fa-headset" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Projects') }}</span>
                 </a>
 
                 <div class="collapse" id="projects">
@@ -197,8 +191,8 @@
             
             <li class="nav-item">
                 <a class="nav-link active" href="#followup" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="customers">
-                    <i class="fas fa-headset" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Followup') }}</span>
+                    <i class="fas fa-headset" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Followup') }}</span>
                 </a>
 
                 <div class="collapse" id="followup">
@@ -224,8 +218,8 @@
 
                {{--  <li class="nav-item">
                     <a class="nav-link active" href="#properties" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="properties">
-                        <i class="far fa-building" style="color: #2D375D"></i>
-                        <span class="nav-link-text" style="color: #2D375D">{{ __('Properties') }}</span>
+                        <i class="far fa-building" style="color: #f4645f;"></i>
+                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Properties') }}</span>
                     </a>
 
                     <div class="collapse" id="properties">
@@ -240,8 +234,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#sales" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="sales">
-                        <i class="fas fa-dollar-sign" style="color: #2D375D"></i>
-                        <span class="nav-link-text" style="color: #2D375D">{{ __('Sales') }}</span>
+                        <i class="fas fa-dollar-sign" style="color: #f4645f;"></i>
+                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Sales') }}</span>
                     </a>
 
                     <div class="collapse" id="sales">
@@ -257,8 +251,8 @@
 
                 <li class="nav-item">
                     <a class="nav-link active" href="#installments" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="installments">
-                        <i class="fas fa-dollar-sign" style="color: #2D375D"></i>
-                        <span class="nav-link-text" style="color: #2D375D">{{ __('Installments') }}</span>
+                        <i class="fas fa-dollar-sign" style="color: #f4645f;"></i>
+                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Installments') }}</span>
                     </a>
 
                     <div class="collapse" id="installments">
@@ -276,8 +270,8 @@
                 
             <li class="nav-item">
                 <a class="nav-link active" href="#followup" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="customers">
-                    <i class="fas fa-headset" style="color: #2D375D"></i>
-                    <span class="nav-link-text" style="color: #2D375D">{{ __('Followup') }}</span>
+                    <i class="fas fa-headset" style="color: #f4645f;"></i>
+                    <span class="nav-link-text" style="color: #f4645f;">{{ __('Followup') }}</span>
                 </a>
 
                 <div class="collapse" id="followup">

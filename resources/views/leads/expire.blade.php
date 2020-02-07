@@ -1,12 +1,9 @@
 @extends('layouts.app', ['title' => __('Leads Management')])
+
 @section('content')
 @include('leads.partials.header', ['title' => __('Leads List')])   
 
 <div class="container-fluid mt--7">
-<<<<<<< HEAD
-
-=======
->>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     <div class="row">
         <div class="col">
             <div class="card shadow">
@@ -17,18 +14,10 @@
                                 {{ __('Total Leads') }} ({{ $leads->count() }})
                             </h3>
                             <pre class="mt-2">Showing-{{ $leads->count() }}</pre>
-
-                            <!-- <div class="alert alert-info">{{ Session::get('success') }}</div> -->
                         </div>
                         <div class="col-4 text-right">
                             <a href="{{ route('leads.create') }}" class="btn btn-sm btn-primary">{{ __('Add Lead') }}</a>
-                            <a href="{{ route('import') }}" class="btn btn-sm btn-primary">{{ __('Upload_csv') }}</a>
-
-                        </div>
-                        <div class="col-4 text-right">
-
-                            <a href="{{ route('leads.expire') }}" class="btn btn-sm btn-primary">{{ __('Outdated Leads') }}</a>
-
+                            <a href="{{ route('leads.index') }}" class="btn btn-sm btn-primary">{{ __('Committed Lead') }}</a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +33,7 @@
                     @endif
                 </div>
                 @hasanyrole('super-admin')
-<br>
+                <br>
       <form method="post"  action="{{ route('leads.search') }}"  autocomplete="off">
                                     @csrf
 
@@ -101,7 +90,7 @@
                                    
                                 </div>
                             </form>
-                            @endrole
+@endrole
                 <div class="table-responsive">
                     <table class="table align-items-center table-dark">
                         <thead class="thead-dark">
@@ -181,9 +170,3 @@
 @include('layouts.footers.auth')
 </div>
 @endsection
-
-
-@push('js')
-<script src="{{ asset('argon') }}/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
-@endpush

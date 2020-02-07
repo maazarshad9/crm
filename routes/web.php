@@ -4,11 +4,10 @@ use Illuminate\Http\Request;
 
 
 
-<<<<<<< HEAD
+
 Route::get("/invoice/{customer}/{booking}/{confirmation}/{allocation}/{agent}" , "InvoiceController@index")->name("invoice");
-=======
 Route::get("/invoice" , "InvoiceController@index")->name("invoice");
->>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
+
 Auth::routes();
 Route::get('dashboard/profile/{id}', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('dashboard/profile/{id}','ProfileController@this')->name("updater");
@@ -52,23 +51,22 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:super-admin', 'aut
 	Route::get('dashboard/lead/setcall/{lead}', ['as' => 'lead.setcall', 'uses' => 'Lead\\LeadsController@setcall']);
 	Route::put('dashboard/lead/storecalling/{lead}', ['as' => 'lead.storecalling', 'uses' => 'Lead\\LeadsController@storecalling']);
 
-<<<<<<< HEAD
+
 	Route::get('dashboard/agents/{id}', 'Agent\\AgentsController@show');
-=======
->>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
+
 Route::group(['prefix' => 'dashboard', 'middleware' => ['role:super-admin|agent', 'auth']], function () {
 	Route::resource('leads', 'Lead\\LeadsController');
 	Route::resource('meetings', 'Meeting\\MeetingsController');
 	Route::resource('callings', 'Calling\\CallingsController');
-<<<<<<< HEAD
+
 });
 
 Route::get('/import', 'ImportController@getImport')->name('import');
 Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
 Route::post('/import_process', 'ImportController@processImport')->name('import_process');
 
-=======
+
 	Route::get('agents/{id}', 'Agent\\AgentsController@show');
-});
+
 Route::get('agent/detail/{id}','Agent\\AgentsController@detail')->name('view_details');
->>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
+

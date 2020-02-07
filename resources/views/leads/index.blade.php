@@ -10,7 +10,7 @@
                     <div class="row align-items-center">
                         <div class="col-8">
                             <h3 class="mb-0">
-                                {{ __('Total Leads') }} ({{ $count  }})
+                                {{ __('Total Leads') }} ({{ $leads->count() }})
                             </h3>
                             <pre class="mt-2">Showing-{{ $leads->count() }}</pre>
                         </div>
@@ -31,6 +31,7 @@
                     </div>
                     @endif
                 </div>
+                @hasanyrole('super-admin')
 <br>
       <form method="post"  action="{{ route('leads.search') }}"  autocomplete="off">
                                     @csrf
@@ -88,6 +89,7 @@
                                    
                                 </div>
                             </form>
+                            @endrole
                 <div class="table-responsive">
                     <table class="table align-items-center table-dark">
                         <thead class="thead-dark">

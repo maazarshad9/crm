@@ -33,6 +33,8 @@ class LeadsController extends Controller
         
         return view('leads.index', [
             'leads' => $model->where('last_date','>', Carbon::now())->orWhere('status', '!=' , 'processing')->paginate(15),
+            'users' => $model->where('last_date','>', Carbon::now())->orWhere('status', '!=' , 'processing')->groupBy('user_id')->get(),
+           
             'count' => $model->count()
         ]);
     }
@@ -52,6 +54,31 @@ class LeadsController extends Controller
         
         return view('leads.expire', [
             'leads' => $model->where([['last_date','<', Carbon::now()],  ['status', '=', 'processing']])->paginate(15),
+            'users' => $model->where('last_date','>', Carbon::now())->orWhere('status', '!=' , 'processing')->groupBy('user_id')->get(),
+           
+            'count' => $model->count()
+        ]);
+    }
+    public function search(Lead $model, Request $request)
+    {
+
+        $model = $model->isCustomer(false);
+
+        if (!auth()->user()->hasRole(['super-admin'])) {
+            $model = $model->where('created_by', auth()->user()->id);
+        }
+
+
+        // check if the role is agent
+        // if agent then list his own leads
+        // if super admin then continue
+        $time = strtotime($request->input('from'));
+        $time1 = strtotime($request->input('to'));
+        $from = date('Y-m-d',$time);
+        $to = date('Y-m-d',$time1);
+ return view('leads.search', [
+            'leads' => $model->where([['user_id','=', $request->input('user_id')],['last_date','>', $from],['last_date','<', $to]])->paginate(15),
+            'users' => $model->where('last_date','>', Carbon::now())->orWhere('status', '!=' , 'processing')->groupBy('user_id')->get(),
             'count' => $model->count()
         ]);
     }

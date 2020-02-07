@@ -55,4 +55,6 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:super-admin|agent'
 	Route::resource('callings', 'Calling\\CallingsController');
 	Route::get('agents/{id}', 'Agent\\AgentsController@show');
 });
+Route::post('leads/search', 'Lead\\LeadsController@search')->name('leads.search');
+
 Route::get('agents/{id}', 'Agent\\AgentsController@show')->name('details');

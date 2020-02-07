@@ -5,7 +5,7 @@
      <div class="container-fluid mt--7">
      @hasanyrole('agent')
         <div class="row">
-        <div class="row mt-5">
+        <div class="row mt-5" >
             <div class="col-xl-12 mb-5 mb-xl-0">
                 <div class="card shadow">
                     <div class="card-header border-0">
@@ -70,7 +70,7 @@
 @endrole
 @hasanyrole('super-admin')
         <div class="row">
-        <div class="row mt-5">
+        <div class="row mt-5" style="width:100%">
             <div class="col-xl-12 mb-5 mb-xl-0">
                 <div class="card shadow">
                     <div class="card-header border-0">
@@ -91,10 +91,7 @@
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Customer</th>
                                     <th scope="col">Total Price</th>
-                                    <th scope="col">Booking Price</th>
-                                    <th scope="col">Allocation Price</th>
-                                    <th scope="col">Confirmation Price</th>
-                                    <th scope="col">Total Commission</th>
+                                    <th scope="col">Total Paid Commission</th>
                                     <th scope="col">Date</th>
                                 </tr>
                             </thead>
@@ -111,15 +108,7 @@
                                     <td>
                                     {{$project->total_price}}
                                     </td>
-                                    <td>
-                                    {{ $project->booking_price }}
-                                    </td>
-                                    <td>
-                                    {{ $project->allocation_price }}
-                                    </td>
-                                    <td>
-                                    {{ $project->confirmation_price }}
-                                    </td>
+                                    
                                     <td>
                                     {{ $project->gettotal($project->id) }}
                                     </td>

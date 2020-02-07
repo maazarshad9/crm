@@ -1,5 +1,4 @@
 @extends('layouts.app', ['title' => __('Leads Management')])
-
 @section('content')
 @include('leads.partials.header', ['title' => __('Leads List')])   
 
@@ -32,7 +31,63 @@
                     </div>
                     @endif
                 </div>
+<br>
+      <form method="post"  action="{{ route('leads.search') }}"  autocomplete="off">
+                                    @csrf
 
+                                    <div class="form-group">
+<div class="row">
+    <div class="col col-sm-3">
+<select name="user_id" class="form-control" data-toggle="select" title="Simple select" data-placeholder="Select Agent" required>
+    <option value="" disabled>Select Agent</option>
+    @foreach($users as $u)
+                                            <option value="{{ $u->user_id }}">
+                                                {{ ucwords( $u->user['full_name'] ) }}
+                                            </option>
+                                            @endforeach
+</select>
+</div>
+<div class="col col-sm-3">
+<div class="form-group">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                                    </div>
+                                    <input name="from" class="form-control datepicker {{ $errors->has('last_date') ? ' is-invalid' : '' }}" placeholder="{{ __('From') }}" placeholder="Select date" type="text" value="" required>
+                                    @if ($errors->has('last_date'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('last_date') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+</div>
+<div class="col col-sm-3">
+                            <div class="form-group">
+                                <div class="input-group input-group-alternative">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
+                                    </div>
+                                    <input name="to" class="form-control datepicker {{ $errors->has('last_date') ? ' is-invalid' : '' }}" placeholder="{{ __('To') }}" placeholder="Select date" type="text" value="" required>
+                                    @if ($errors->has('last_date'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('last_date') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+</div>
+<div class="col col-sm-3">
+
+
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                 
+</div>
+
+</div></div>
+                                   
+                                </div>
+                            </form>
                 <div class="table-responsive">
                     <table class="table align-items-center table-dark">
                         <thead class="thead-dark">
@@ -112,3 +167,9 @@
 @include('layouts.footers.auth')
 </div>
 @endsection
+
+
+@push('js')
+<script src="{{ asset('argon') }}/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+@endpush

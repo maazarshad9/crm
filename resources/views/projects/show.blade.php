@@ -184,7 +184,7 @@ Villa
         <div class="col ml--2">
             <h4 class="mb-0">
                 <a href="#!">{{ $member->full_name }}</a>
-                <h5>{{$member->pivot->created_at->format('m/d/Y')}}</h5>
+                <h5>{{$member->created_at->format('m/d/Y')}}</h5>
                 <!-- <a href="#!">{{ $member->pivot->size }}</a> -->
             </h4>
         </div>

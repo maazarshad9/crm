@@ -14,7 +14,10 @@
         "laravel/framework": "^6.2",
         "laravel/tinker": "^1.0",
         "laraveldaily/laravel-invoices": "^1.3",
+<<<<<<< HEAD
         "maatwebsite/excel": "^3.1",
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         "spatie/laravel-permission": "^3.2"
     },
     "require-dev": {

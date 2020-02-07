@@ -8,7 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Calling' => $baseDir . '/app/Calling.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+<<<<<<< HEAD
     'App\\CsvData' => $baseDir . '/app/CsvData.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Agent\\AgentsController' => $baseDir . '/app/Http/Controllers/Agent/AgentsController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -21,7 +24,10 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\Customer\\CustomerController' => $baseDir . '/app/Http/Controllers/Customer/CustomerController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+<<<<<<< HEAD
     'App\\Http\\Controllers\\ImportController' => $baseDir . '/app/Http/Controllers/ImportController.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     'App\\Http\\Controllers\\InvoiceController' => $baseDir . '/app/Http/Controllers/InvoiceController.php',
     'App\\Http\\Controllers\\Lead\\LeadsController' => $baseDir . '/app/Http/Controllers/Lead/LeadsController.php',
     'App\\Http\\Controllers\\Meeting\\MeetingsController' => $baseDir . '/app/Http/Controllers/Meeting/MeetingsController.php',
@@ -41,7 +47,10 @@ return array(
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
     'App\\Http\\Requests\\CsvImportRequest' => $baseDir . '/app/Http/Requests/CsvImportRequest.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     'App\\Http\\Requests\\PasswordRequest' => $baseDir . '/app/Http/Requests/PasswordRequest.php',
     'App\\Http\\Requests\\ProfileRequest' => $baseDir . '/app/Http/Requests/ProfileRequest.php',
     'App\\Http\\Requests\\UserRequest' => $baseDir . '/app/Http/Requests/UserRequest.php',
@@ -94,8 +103,11 @@ return array(
     'Carbon\\Traits\\Units' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Units.php',
     'Carbon\\Traits\\Week' => $vendorDir . '/nesbot/carbon/src/Carbon/Traits/Week.php',
     'Carbon\\Translator' => $vendorDir . '/nesbot/carbon/src/Carbon/Translator.php',
+<<<<<<< HEAD
     'Complex\\Complex' => $vendorDir . '/markbaker/complex/classes/src/Complex.php',
     'Complex\\Exception' => $vendorDir . '/markbaker/complex/classes/src/Exception.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     'Cron\\AbstractField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
     'Cron\\CronExpression' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
     'Cron\\DayOfMonthField' => $vendorDir . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -1884,6 +1896,7 @@ return array(
     'League\\Flysystem\\Util\\ContentListingFormatter' => $vendorDir . '/league/flysystem/src/Util/ContentListingFormatter.php',
     'League\\Flysystem\\Util\\MimeType' => $vendorDir . '/league/flysystem/src/Util/MimeType.php',
     'League\\Flysystem\\Util\\StreamHasher' => $vendorDir . '/league/flysystem/src/Util/StreamHasher.php',
+<<<<<<< HEAD
     'Maatwebsite\\Excel\\Cell' => $vendorDir . '/maatwebsite/excel/src/Cell.php',
     'Maatwebsite\\Excel\\ChunkReader' => $vendorDir . '/maatwebsite/excel/src/ChunkReader.php',
     'Maatwebsite\\Excel\\Concerns\\Exportable' => $vendorDir . '/maatwebsite/excel/src/Concerns/Exportable.php',
@@ -2014,6 +2027,8 @@ return array(
     'Matrix\\Operators\\Multiplication' => $vendorDir . '/markbaker/matrix/classes/src/Operators/Multiplication.php',
     'Matrix\\Operators\\Operator' => $vendorDir . '/markbaker/matrix/classes/src/Operators/Operator.php',
     'Matrix\\Operators\\Subtraction' => $vendorDir . '/markbaker/matrix/classes/src/Operators/Subtraction.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     'Mockery' => $vendorDir . '/mockery/mockery/library/Mockery.php',
     'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => $vendorDir . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
     'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => $vendorDir . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
@@ -2695,6 +2710,7 @@ return array(
     'PharIo\\Version\\VersionConstraintParser' => $vendorDir . '/phar-io/version/src/VersionConstraintParser.php',
     'PharIo\\Version\\VersionConstraintValue' => $vendorDir . '/phar-io/version/src/VersionConstraintValue.php',
     'PharIo\\Version\\VersionNumber' => $vendorDir . '/phar-io/version/src/VersionNumber.php',
+<<<<<<< HEAD
     'PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation' => $vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Calculation.php',
     'PhpOffice\\PhpSpreadsheet\\Calculation\\Category' => $vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Category.php',
     'PhpOffice\\PhpSpreadsheet\\Calculation\\Database' => $vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Database.php',
@@ -2911,6 +2927,8 @@ return array(
     'PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Workbook' => $vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Workbook.php',
     'PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet' => $vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php',
     'PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\WriterPart' => $vendorDir . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/WriterPart.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
     'PhpOption\\LazyOption' => $vendorDir . '/phpoption/phpoption/src/PhpOption/LazyOption.php',
     'PhpOption\\None' => $vendorDir . '/phpoption/phpoption/src/PhpOption/None.php',
     'PhpOption\\Option' => $vendorDir . '/phpoption/phpoption/src/PhpOption/Option.php',

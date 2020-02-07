@@ -142,7 +142,11 @@
                 <div class="collapse" id="commission">
                     <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="{{ route('agents.show', auth()->user()) }}">
+=======
+                            <a class="nav-link" href="{{ route('view_details', auth()->user()) }}">
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
                                 {{ __('View  Details') }}
                             </a>
                         </li>

@@ -18,6 +18,7 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+<<<<<<< HEAD
         'abede361264e2ae69ec1eee813a101af' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/abs.php',
         '21a5860fbef5be28db5ddfbc3cca67c4' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/acos.php',
         '1546e3f9d127f2a9bb2d1b6c31c26ef1' => __DIR__ . '/..' . '/markbaker/complex/classes/src/functions/acosh.php',
@@ -76,6 +77,8 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'aa53dcba601214d17ad405b7c291b7e8' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/operations/multiply.php',
         '75c79eb1b25749b05a47976f32b0d8a2' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/operations/divideby.php',
         '6ab8ad87a734f276a6bcd5a0fe1289be' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/operations/divideinto.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
@@ -141,7 +144,10 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
+<<<<<<< HEAD
             'PhpOffice\\PhpSpreadsheet\\' => 25,
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         ),
         'O' => 
         array (
@@ -154,8 +160,11 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'M' => 
         array (
             'Monolog\\' => 8,
+<<<<<<< HEAD
             'Matrix\\' => 7,
             'Maatwebsite\\Excel\\' => 18,
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         ),
         'L' => 
         array (
@@ -198,7 +207,10 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'C' => 
         array (
             'Cron\\' => 5,
+<<<<<<< HEAD
             'Complex\\' => 8,
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -358,10 +370,13 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+<<<<<<< HEAD
         'PhpOffice\\PhpSpreadsheet\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet',
         ),
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -374,6 +389,7 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+<<<<<<< HEAD
         'Matrix\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/matrix/classes/src',
@@ -382,6 +398,8 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         array (
             0 => __DIR__ . '/..' . '/maatwebsite/excel/src',
         ),
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
@@ -466,10 +484,13 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+<<<<<<< HEAD
         'Complex\\' => 
         array (
             0 => __DIR__ . '/..' . '/markbaker/complex/classes/src',
         ),
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
@@ -526,7 +547,10 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
     public static $classMap = array (
         'App\\Calling' => __DIR__ . '/../..' . '/app/Calling.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+<<<<<<< HEAD
         'App\\CsvData' => __DIR__ . '/../..' . '/app/CsvData.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Agent\\AgentsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Agent/AgentsController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
@@ -539,7 +563,10 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Customer\\CustomerController' => __DIR__ . '/../..' . '/app/Http/Controllers/Customer/CustomerController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+<<<<<<< HEAD
         'App\\Http\\Controllers\\ImportController' => __DIR__ . '/../..' . '/app/Http/Controllers/ImportController.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'App\\Http\\Controllers\\InvoiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/InvoiceController.php',
         'App\\Http\\Controllers\\Lead\\LeadsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Lead/LeadsController.php',
         'App\\Http\\Controllers\\Meeting\\MeetingsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Meeting/MeetingsController.php',
@@ -559,7 +586,10 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
         'App\\Http\\Requests\\CsvImportRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CsvImportRequest.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'App\\Http\\Requests\\PasswordRequest' => __DIR__ . '/../..' . '/app/Http/Requests/PasswordRequest.php',
         'App\\Http\\Requests\\ProfileRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileRequest.php',
         'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
@@ -612,8 +642,11 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'Carbon\\Traits\\Units' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Units.php',
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+<<<<<<< HEAD
         'Complex\\Complex' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Complex.php',
         'Complex\\Exception' => __DIR__ . '/..' . '/markbaker/complex/classes/src/Exception.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -2402,6 +2435,7 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+<<<<<<< HEAD
         'Maatwebsite\\Excel\\Cell' => __DIR__ . '/..' . '/maatwebsite/excel/src/Cell.php',
         'Maatwebsite\\Excel\\ChunkReader' => __DIR__ . '/..' . '/maatwebsite/excel/src/ChunkReader.php',
         'Maatwebsite\\Excel\\Concerns\\Exportable' => __DIR__ . '/..' . '/maatwebsite/excel/src/Concerns/Exportable.php',
@@ -2532,6 +2566,8 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'Matrix\\Operators\\Multiplication' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/Operators/Multiplication.php',
         'Matrix\\Operators\\Operator' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/Operators/Operator.php',
         'Matrix\\Operators\\Subtraction' => __DIR__ . '/..' . '/markbaker/matrix/classes/src/Operators/Subtraction.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
@@ -3213,6 +3249,7 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+<<<<<<< HEAD
         'PhpOffice\\PhpSpreadsheet\\Calculation\\Calculation' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Calculation.php',
         'PhpOffice\\PhpSpreadsheet\\Calculation\\Category' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Category.php',
         'PhpOffice\\PhpSpreadsheet\\Calculation\\Database' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Calculation/Database.php',
@@ -3429,6 +3466,8 @@ class ComposerStaticInitb3ae2d281a2ce6dbf025cae29f0ca03c
         'PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Workbook' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Workbook.php',
         'PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\Worksheet' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/Worksheet.php',
         'PhpOffice\\PhpSpreadsheet\\Writer\\Xlsx\\WriterPart' => __DIR__ . '/..' . '/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Writer/Xlsx/WriterPart.php',
+=======
+>>>>>>> ac49cddb2a9e68dbc185f903f37e248d88c3be6c
         'PhpOption\\LazyOption' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/LazyOption.php',
         'PhpOption\\None' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/None.php',
         'PhpOption\\Option' => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption/Option.php',

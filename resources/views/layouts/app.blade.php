@@ -46,6 +46,9 @@
   color: black !important;
   opacity: 1 !important; /* Firefox */
 }
+.navbar-search-dark .form-control::placeholder{
+    color:white !important;
+}
     </style>
     @stack('css')
 </head>

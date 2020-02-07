@@ -10,7 +10,7 @@
                             <div class="row">
                                 <div class="col">
                         
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Agents</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Total<br> Agents</h5>
                                     <span class="h2 font-weight-bold mb-0">{{$totalAgents}}</span>
                                 </div>
                                 <div class="col-auto">
@@ -31,7 +31,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Projects</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Total<br> Projects</h5>
                                     <span class="h2 font-weight-bold mb-0">{{$totalProjects}}</span>
                                 </div>
                                 <div class="col-auto">
@@ -52,7 +52,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Leads</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Total<br> Leads</h5>
                                     <span class="h2 font-weight-bold mb-0">{{$totalLeads}}</span>
                                 </div>
                                 <div class="col-auto">
@@ -73,7 +73,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Commission</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Paid Commission</h5>
                                     <span class="h2 font-weight-bold mb-0">{{$totalCommission}}</span>
                                 </div>
                                 <div class="col-auto">
@@ -143,7 +143,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Meetings</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Total<br> Meetings</h5>
                                     <span class="h2 font-weight-bold mb-0">{{$totalUserMeetings}}</span>
                                 </div>
                                 <div class="col-auto">
@@ -164,7 +164,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
-                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Commission</h5>
+                                    <h5 class="card-title text-uppercase text-muted mb-0">Total Paid Commission</h5>
                                     <span class="h2 font-weight-bold mb-0">{{$projectUsersCommission}}</span>
                                 </div>
                                 <div class="col-auto">

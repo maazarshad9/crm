@@ -17,7 +17,7 @@
                         </div>
                         <div class="col-4 text-right">
                             <a href="{{ route('leads.create') }}" class="btn btn-sm btn-primary">{{ __('Add Lead') }}</a>
-                            <a href="{{ route('leads.expire') }}" class="btn btn-sm btn-primary">{{ __('Expired Leads') }}</a>
+                            <a href="{{ route('leads.index') }}" class="btn btn-sm btn-primary">{{ __('Committed Leads') }}</a>
                         </div>
                     </div>
                 </div>

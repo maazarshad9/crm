@@ -32,7 +32,26 @@ class LeadsController extends Controller
         // if super admin then continue
         
         return view('leads.index', [
-            'leads' => $model->where('last_date','>', Carbon::now())->paginate(15),
+            'leads' => $model->where('last_date','>', Carbon::now())->orWhere('status', '!=' , 'processing')->paginate(15),
+            'count' => $model->count()
+        ]);
+    }
+    public function expire(Lead $model)
+    {
+
+        $model = $model->isCustomer(false);
+
+        if (!auth()->user()->hasRole(['super-admin'])) {
+            $model = $model->where('created_by', auth()->user()->id);
+        }
+
+
+        // check if the role is agent
+        // if agent then list his own leads
+        // if super admin then continue
+        
+        return view('leads.expire', [
+            'leads' => $model->where([['last_date','<', Carbon::now()],  ['status', '=', 'processing']])->paginate(15),
             'count' => $model->count()
         ]);
     }

@@ -44,6 +44,7 @@ Route::group(['prefix' => 'dashboard', 'middleware' => ['role:super-admin', 'aut
 	Route::get('dashboard/lead/addmeeting/{lead}', ['as' => 'lead.addmeeting', 'uses' => 'Lead\\LeadsController@addmeeting']);
 	Route::put('dashboard/lead/storemeeting/{lead}', ['as' => 'lead.storemeeting', 'uses' => 'Lead\\LeadsController@storemeeting']);
 	
+	Route::get('dashboard/expire','Lead\\LeadsController@expire')->name('leads.expire');
 	// Set Call
 	Route::get('dashboard/lead/setcall/{lead}', ['as' => 'lead.setcall', 'uses' => 'Lead\\LeadsController@setcall']);
 	Route::put('dashboard/lead/storecalling/{lead}', ['as' => 'lead.storecalling', 'uses' => 'Lead\\LeadsController@storecalling']);

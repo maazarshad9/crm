@@ -13,7 +13,13 @@ class Project extends Model
 
     public function customer()
     {
-    	return $this->belongsTo(Lead::class, 'customer_id');
+        return $this->belongsTo(Lead::class, 'customer_id');
+        
+    }
+    
+    public function date()
+    {
+        return $this->created_at;
     }
 
   
@@ -26,8 +32,7 @@ class Project extends Model
 	    		'allocation_commission', 
                 'confirmation_commission',
                 'size',
-                'category',
-                'created_at'
+                'category'
 	    	]);
     }
     public function gettotal($id)
@@ -35,5 +40,9 @@ class Project extends Model
         $total = Project_User::where('project_id',$id)->sum('booking_commission') + Project_User::where('project_id',$id)->sum('allocation_commission') + Project_User::where('project_id',$id)->sum('confirmation_commission');
         return $total;
     }
-    
+    public function getowner($id)
+    {
+        $user = User::find($id)->first();
+        return $user->first_name . ' ' . $user->last_name;
+    }
 }

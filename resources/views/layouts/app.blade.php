@@ -35,6 +35,9 @@
         .navbar-vertical.navbar-expand-md .navbar-brand-img{
             max-height: 8rem;
         }
+        .card .table td, .card .table th{
+            font-weight:700;
+        }
     </style>
     @stack('css')
 </head>

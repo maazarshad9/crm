@@ -25,7 +25,7 @@
                                 <tr>
                                     <th scope="col">Project Name</th>
                                     <th scope="col">Project Customer</th>
-                                    <th scope="col">Agent Name</th>
+                                    <th scope="col">Owner Name</th>
                                     <th scope="col">Booking Commission</th>
                                     <th scope="col">Confirmation Commission</th>
                                     <th scope="col">Allocation Commission</th>
@@ -43,7 +43,7 @@
                                     {{ $project->customer->name }}
                                     </td>
                                     <td>
-                                    {{$user->getFullNameAttribute()}}
+                                    {{$project->getowner($project->owner_id)}}
                                     </td>
                                     <td>
                                     {{ $project->pivot->booking_commission }}
@@ -55,7 +55,7 @@
                                     {{ $project->pivot->allocation_commission }}
                                     </td>
                                     <td>
-                                    {{ $project->pivot->created_at }}
+                                    {{ $project->date()->format('m/d/Y') }}
                                     </td>
                                 </tr>
                                 @endforeach
@@ -122,6 +122,9 @@
                                     </td>
                                     <td>
                                     {{ $project->gettotal($project->id) }}
+                                    </td>
+                                    <td>
+                                    {{ $project->created_at->toDatestring() }}
                                     </td>
                                 </tr>
                                 @endforeach

@@ -279,7 +279,11 @@ class ClassLoader
      */
     public function setApcuPrefix($apcuPrefix)
     {
+<<<<<<< HEAD
         $this->apcuPrefix = function_exists('apcu_fetch') && filter_var(ini_get('apc.enabled'), FILTER_VALIDATE_BOOLEAN) ? $apcuPrefix : null;
+=======
+        $this->apcuPrefix = function_exists('apcu_fetch') && ini_get('apc.enabled') ? $apcuPrefix : null;
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
     }
 
     /**

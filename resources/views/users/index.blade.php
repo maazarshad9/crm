@@ -68,7 +68,11 @@
                                                             </button>
                                                         </form>    
                                                     @else
+<<<<<<< HEAD
                                                         <a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Edit') }}</a>
+=======
+                                                        <a class="dropdown-item" href="{{ route('profile.edit',auth()->user()->id) }}">{{ __('Edit') }}</a>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                                                     @endif
                                                 </div>
                                             </div>

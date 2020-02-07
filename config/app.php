@@ -12,6 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
+<<<<<<< HEAD
     'db_fields' => [
         'name',
         'status',
@@ -22,6 +23,9 @@ return [
         'assigned to',
         'last date'
     ],
+=======
+
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
     'name' => env('APP_NAME', 'Laravel'),
 
     /*

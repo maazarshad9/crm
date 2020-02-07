@@ -36,6 +36,10 @@
                                 <th scope="col">{{ __('Project Name') }}</th>
                                 <th scope="col">{{ __('Customer') }}</th>
                                 <th scope="col">{{ __('Project Created By') }}</th>
+<<<<<<< HEAD
+=======
+                                <th scope="col">{{ __('Project Created At') }}</th>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                                 <th scope="col"></th>
                             </tr>
                         </thead>
@@ -50,7 +54,14 @@
                                     {{ $project->customer->name }}
                                 </td>
                                 <td>
+<<<<<<< HEAD
                                     {{ $project->owner['full_name'] }}
+=======
+                                    {{ $project->getowner($project->owner_id) }}
+                                </td>
+                                <td>
+                                    {{ $project->created_at->format('m/d/Y') }}
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                                 </td>
                                 <td class="text-right">
                                     <div class="dropdown">

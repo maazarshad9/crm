@@ -50,6 +50,16 @@
 						<div class="col ml--2">
 							<h4 class="mb-0">
 								<a href="#!">{{ $project->customer->name }}</a>
+<<<<<<< HEAD
+=======
+							
+							</h4>
+						</div>
+						<div class="col ml--2 text-center">
+							<h4 class="mb-0">
+								<a href="#!">{{ $project->date()->format('m/d/Y') }}</a>
+								
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
 							</h4>
 						</div>
 					</div>
@@ -65,7 +75,11 @@
 												</div>
 											</div>
 										</th>
+<<<<<<< HEAD
 										<td>
+=======
+										<td class="text-center">
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
 											{{ $project->pivot->booking_commission }}
 										</td>
 									</tr>
@@ -77,7 +91,11 @@
 												</div>
 											</div>
 										</th>
+<<<<<<< HEAD
 										<td>
+=======
+										<td class="text-center">
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
 											{{ $project->pivot->confirmation_commission }}
 										</td>
 									</tr>
@@ -89,13 +107,21 @@
 												</div>
 											</div>
 										</th>
+<<<<<<< HEAD
 										<td>
+=======
+										<td class="text-center">
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
 											{{ $project->pivot->allocation_commission }}
 										</td>
 									</tr>
 									<tr>
 										<th>Total Commission</th>
+<<<<<<< HEAD
 										<td> 
+=======
+										<td class="text-center"> 
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
 											{{ $project->pivot->booking_commission + $project->pivot->confirmation_commission + $project->pivot->allocation_commission }}
 										</td>
 									</tr>

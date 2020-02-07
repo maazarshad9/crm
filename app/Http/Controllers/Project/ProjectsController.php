@@ -57,14 +57,22 @@ class ProjectsController extends Controller
     {
         $project = Project::findOrFail($id);
         $userIds = $project->members()->pluck('member_id')->toArray();
+<<<<<<< HEAD
 
+=======
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
         $totalComission = $project->members->sum(function($p){ 
             return $p->pivot->booking_commission + 
                     $p->pivot->allocation_commission +
                     $p->pivot->confirmation_commission; 
         });
 
+<<<<<<< HEAD
         $users = User::latest()->isAgent(true)->whereNotIn('id', $userIds)->get();
+=======
+        // $users = User::latest()->isAgent(true)->whereNotIn('id', $userIds)->get();
+        $users = User::latest()->isAgent(true)->get();
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
         return view('projects.show', compact('project', 'users', 'totalComission'));
     }
 

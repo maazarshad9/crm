@@ -20,17 +20,31 @@ class AgentsController extends Controller
     {
     	return view('agents.create');
     }
+<<<<<<< HEAD
 
     public function show($id)
     {
         $user = User::findOrFail($id);
         $user->isAgent(true);
         if (auth()->user()->hasRole(['super-admin']) || $user->id === auth()->user()->id) {
+=======
+    public function show($id)
+    {
+    
+        $user = User::findOrFail($id);
+        $user->isAgent(true);
+        if (auth()->user()->hasRole(['super-admin|agent']) || $user->id === auth()->user()->id) {
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
             return view('users.show', ['user' => $user]);
         }
         return back();
     }
 
+<<<<<<< HEAD
+=======
+    
+
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
     public function store(UserRequest $request, User $model)
     {
         $model->create(

@@ -35,6 +35,23 @@
         .navbar-vertical.navbar-expand-md .navbar-brand-img{
             max-height: 8rem;
         }
+<<<<<<< HEAD
+=======
+        .card .table td, .card .table th{
+            font-weight:700;
+        }
+        .col-sm-3{
+            margin: 0 2%;
+            flex: 0 0 21%;
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black !important;
+  opacity: 1 !important; /* Firefox */
+}
+.navbar-search-dark .form-control::placeholder{
+    color:white !important;
+}
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
     </style>
     @stack('css')
 </head>

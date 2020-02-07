@@ -48,16 +48,28 @@
             </tbody>
         </table>
 
+<<<<<<< HEAD
         {{-- Agent - Customer --}}
+=======
+        {{-- Seller - Buyer --}}
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
         <table class="table">
             <thead>
                 <tr>
                     <th class="border-0 pl-0" width="48.5%">
+<<<<<<< HEAD
                         <h2>Agent</h2>
                     </th>
                     <th class="border-0" width="3%"></th>
                     <th class="border-0 pl-0">
                         <h2>Customer</h2>
+=======
+                        <h2>{{ __('invoices::invoice.seller') }}</h2>
+                    </th>
+                    <th class="border-0" width="3%"></th>
+                    <th class="border-0 pl-0">
+                        <h2>{{ __('invoices::invoice.buyer') }}</h2>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                     </th>
                 </tr>
             </thead>
@@ -150,8 +162,13 @@
                     @if($invoice->hasItemUnits)
                         <th scope="col" class="text-center border-0">{{ __('invoices::invoice.units') }}</th>
                     @endif
+<<<<<<< HEAD
                     <!-- <th scope="col" class="text-center border-0">{{ __('invoices::invoice.quantity') }}</th> -->
                     <th scope="col" class="text-right border-0">ammount</th>
+=======
+                    <th scope="col" class="text-center border-0">{{ __('invoices::invoice.quantity') }}</th>
+                    <th scope="col" class="text-right border-0">{{ __('invoices::invoice.price') }}</th>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                     @if($invoice->hasItemDiscount)
                         <th scope="col" class="text-right border-0">{{ __('invoices::invoice.discount') }}</th>
                     @endif
@@ -169,7 +186,11 @@
                     @if($invoice->hasItemUnits)
                         <td class="text-center">{{ $item->units }}</td>
                     @endif
+<<<<<<< HEAD
                     <!-- <td class="text-center">{{ $item->quantity }}</td> -->
+=======
+                    <td class="text-center">{{ $item->quantity }}</td>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                     <td class="text-right">
                         {{ $invoice->formatCurrency($item->price_per_unit) }}
                     </td>
@@ -245,7 +266,11 @@
             {{ trans('invoices::invoice.amount_in_words') }}: {{ $invoice->getTotalAmountInWords() }}
         </p>
         <p>
+<<<<<<< HEAD
             <!-- {{ trans('invoices::invoice.pay_until') }}: {{ $invoice->getPayUntilDate() }} -->
+=======
+            {{ trans('invoices::invoice.pay_until') }}: {{ $invoice->getPayUntilDate() }}
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
         </p>
 
         <script type="text/php">

@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "f9009094e6bf654c5896eb01d9d50c6d",
+=======
+    "content-hash": "95ea1c4a2e9bcc59025ee7f31092bfca",
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
     "packages": [
         {
             "name": "barryvdh/laravel-dompdf",
@@ -988,6 +992,7 @@
             "time": "2019-10-16T21:01:05+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "maatwebsite/excel",
             "version": "3.1.18",
             "source": {
@@ -1219,6 +1224,8 @@
             "time": "2019-10-06T11:29:25+00:00"
         },
         {
+=======
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
             "name": "monolog/monolog",
             "version": "2.0.0",
             "source": {
@@ -1602,6 +1609,7 @@
             "time": "2019-09-11T20:02:13+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phpoffice/phpspreadsheet",
             "version": "1.10.1",
             "source": {
@@ -1695,6 +1703,8 @@
             "time": "2019-12-01T23:13:51+00:00"
         },
         {
+=======
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
             "name": "phpoption/phpoption",
             "version": "1.5.0",
             "source": {

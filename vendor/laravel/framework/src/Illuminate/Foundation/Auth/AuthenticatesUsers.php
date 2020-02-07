@@ -5,7 +5,11 @@ namespace Illuminate\Foundation\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+<<<<<<< HEAD
 
+=======
+use App\User;
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
 trait AuthenticatesUsers
 {
     use RedirectsUsers, ThrottlesLogins;
@@ -105,7 +109,12 @@ trait AuthenticatesUsers
         $request->session()->regenerate();
 
         $this->clearLoginAttempts($request);
+<<<<<<< HEAD
 
+=======
+$user = User::where('email',$request->input('email'))->first();
+$id = $user->id;
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
         return $this->authenticated($request, $this->guard()->user())
                 ?: redirect()->intended($this->redirectPath());
     }

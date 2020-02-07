@@ -184,6 +184,10 @@ Villa
         <div class="col ml--2">
             <h4 class="mb-0">
                 <a href="#!">{{ $member->full_name }}</a>
+<<<<<<< HEAD
+=======
+                <h5>{{$member->created_at->format('m/d/Y')}}</h5>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                 <!-- <a href="#!">{{ $member->pivot->size }}</a> -->
             </h4>
         </div>
@@ -285,7 +289,11 @@ Villa
                                         <td><button type="button" class="btn btn-sm btn-primary" title="Booking" disabled>{{ $member->pivot->booking_commission + $member->pivot->confirmation_commission + $member->pivot->allocation_commission }}</button> </td>
                                     </tr>
                                     <tr>
+<<<<<<< HEAD
                                    <td><a href="{{route('invoice' , [ 'customer'=>$project->customer->name,  'booking'=>$member->pivot->booking_commission , 'confirmation'=>$member->pivot->confirmation_commission,'allocation'=>$member->pivot->allocation_commission ,'agent'=>$member->full_name])}}"> <button class="btn btn-sm btn-primary">Get PDF</button></a></td>
+=======
+                                   <td><a href="{{route('invoice')}}"> <button class="btn btn-sm btn-primary">Get PDF</button></a></td>
+>>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
                                  </tr>
                                     
                                 </tbody>

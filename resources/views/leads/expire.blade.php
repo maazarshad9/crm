@@ -17,7 +17,7 @@
                         </div>
                         <div class="col-4 text-right">
                             <a href="{{ route('leads.create') }}" class="btn btn-sm btn-primary">{{ __('Add Lead') }}</a>
-                            <a href="{{ route('leads.index') }}" class="btn btn-sm btn-primary">{{ __('Committed Leads') }}</a>
+                            <a href="{{ route('leads.index') }}" class="btn btn-sm btn-primary">{{ __('Committed Lead') }}</a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                                     <div class="form-group">
 <div class="row">
     <div class="col col-sm-3">
-<select name="user_id" class="form-control" data-toggle="select" title="Simple select" data-placeholder="Select Agent" required>
+<select name="user_id" class="form-control" data-toggle="select" title="Simple select" placeholder="Select Agent" required>
     <option value="" disabled>Select Agent</option>
     @foreach($users as $u)
                                             <option value="{{ $u->user_id }}">
@@ -89,7 +89,6 @@
                                    
                                 </div>
                             </form>
-
 
                 <div class="table-responsive">
                     <table class="table align-items-center table-dark">

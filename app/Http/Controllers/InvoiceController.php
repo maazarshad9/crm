@@ -7,15 +7,14 @@ use LaravelDaily\Invoices\Invoice;
 use LaravelDaily\Invoices\Classes\Party;
 use LaravelDaily\Invoices\Classes\InvoiceItem;
 use LaravelDaily\Invoices\Classes\Buyer;
-<<<<<<< HEAD
+
 use App\Models\Project;
-=======
->>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
+
 class InvoiceController extends Controller
 {
     //
 
-<<<<<<< HEAD
+
     public function index($customer,$booking,$confirmation,$allocation,$agent ){
         // $get_member = 
         // $get_members = Project.members::find($project);
@@ -91,22 +90,7 @@ class InvoiceController extends Controller
         // Then send email to party with link
 
         // And return invoice itself to browser or have a different view
-=======
-    public function index(){
-        $customer = new Buyer([
-            'name'          => 'John Doe',
-            'custom_fields' => [
-                'email' => 'test@example.com',
-            ],
-        ]);
-        
-        $item = (new InvoiceItem())->title('Service 1')->pricePerUnit(2);
-        
-        $invoice = Invoice::make()
-            ->buyer($customer)
-            ->addItem($item);
-        
->>>>>>> df0b4bdc1601e09b0c24b8129f6d56824547c855
-        return $invoice->stream();
-    }
+
+  
 } 
+}
